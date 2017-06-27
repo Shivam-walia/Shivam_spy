@@ -1,6 +1,10 @@
+#import or add datetime
 from datetime import datetime
+
+#spy class is defined
 class Spy:
 
+#function defination with constructor
     def __init__(self, name, salutaton, age, rating):
         self.name = name
         self.salutaton = salutaton
