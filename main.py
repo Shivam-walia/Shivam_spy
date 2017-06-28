@@ -4,6 +4,10 @@ from  steganography.steganography import Steganography
 from datetime import datetime
 now=datetime.now()
 
+from colorama import init
+init()
+from  colorama import Fore
+
 # list contains pre-status
 STATUS_MESSAGES = ["I'm busy", "At Gym", "At Movies"]
 # lists with different names of new friend
@@ -154,7 +158,7 @@ def read_chat_history():
 
     for chat in friends[read_for].chats:
         if chat.sent_by_me:
-            print '[%s] %s %s '%(chat.time.strftime("%d %B %y"),'you said',chat.message)
+            print Fore.BLUE + '[%s] %s %s '%(chat.time.strftime("%d %B %y"),'you said', chat.message)
         else:
             print '[%s] %s said: %s' %(chat.time.strftime("%d %B %y"),friends[read_for].name,chat.message)
 
