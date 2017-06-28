@@ -158,9 +158,9 @@ def read_chat_history():
 
     for chat in friends[read_for].chats:
         if chat.sent_by_me:
-            print Fore.BLUE + '[%s] %s %s '%(chat.time.strftime("%d %B %y"),'you said', chat.message)
+            print Fore.BLUE +(chat.time.strftime("%d %B %y")  + Fore.RED + 'you said :  ' +  Fore.BLACK + chat.message)
         else:
-            print '[%s] %s said: %s' %(chat.time.strftime("%d %B %y"),friends[read_for].name,chat.message)
+            print Fore.BLUE+ (chat.time.strftime("%d %B %y") + Fore.RED + friends[read_for].name  + Fore.BLACK + chat.message)
 
 
 
