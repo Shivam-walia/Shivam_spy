@@ -14,9 +14,9 @@ STATUS_MESSAGES = ["I'm busy", "At Gym", "At Movies"]
 
 
 # Display hello as output
-print (" *************Hello**************")
+print Fore.LIGHTBLUE_EX + (" *************Hello**************")
 
-print("welcome to spy chat appication")
+print Fore.LIGHTBLUE_EX+ ("welcome to spy chat appication")
 
 choice = raw_input("would you like to continue as default user ..? (Y/N)..:")
 
