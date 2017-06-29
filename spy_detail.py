@@ -13,6 +13,7 @@ class Spy:
         self.online = True
         self.chats = []
         self.current_status_message = None
+#function defination for another class
 class chat_message:
 
     def __init__(self,message,sent_by_me):
