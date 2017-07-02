@@ -257,7 +257,7 @@ elif choice == 'n' or choice == 'N':
 
             # codition fails again re-enter the details
 
-            start_chat(spy.salutaton, spy.name, spy.age)
+            start_chat(spy)
 
 
 
